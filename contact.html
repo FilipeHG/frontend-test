@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+    
+	<title> Frontend Test - Amil | Filipe Gonçalves </title>
+    
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+	<header class="main-header">
+		<div class="box-gray">
+			<div class="container">
+				<div class="logo">
+					<img src="svgs/logo.svg" alt="Frontend Test - Amil | Filipe Gonçalves" onclick="javascript:void(0);" />
+				</div>
+				
+				<nav class="main-menu">
+					<ul>
+						<li>
+							<a href="javascript:void(0);" title="Lorem ipsum">
+								Lorem ipsum
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Dolor">
+								Dolor
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Consectetur">
+								Consectetur
+							</a>
+						</li>
+						<li class="bg-button">
+							<a href="javascript:void(0);" title="Interdum">
+								Interdum
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div> <!-- .container -->
+		</div> <!-- .box-gray -->
+
+		<div class="container">
+			<ol class="breadcrumb">
+				<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="javascript:void(0);" itemprop="url">
+						<span itemprop="title">Vestibulum</span>
+					</a>
+				</li>
+				<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="javascript:void(0);" itemprop="url">
+						<span itemprop="title">Ultrices</span>
+					</a>
+				</li>  
+				<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="javascript:void(0);" itemprop="url">
+						<span itemprop="title">Érat egestas</span>
+					</a>
+				</li>
+				<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="javascript:void(0);" itemprop="url">
+						<span itemprop="title">Varius felis sed</span>
+					</a>
+				</li>
+			</ol>
+		</div> <!-- .container -->
+	</header>
+
+	<main role="main">
+		<div class="container">
+			
+			<div class="box-form">
+				<h1> CONTATO </h1>			
+				
+				<form action="" method="post">
+				
+					<label>
+						Nome: 
+						<input type="text" name="cName" id="cName" maxlength="150" placeholder="Nome" data-error="Preencha o campo Nome corretamente" onblur="isLettersAlone(this, true)" onkeydown="resetValidation(this)" />
+						<span class="msgError"></span>
+					</label>
+
+					<label>
+						Telefone:
+						<input type="text" name="cPhone" id="cPhone" placeholder="(99) 99999-9999" data-error="Preencha o campo Telefone corretamente" onblur="isPhoneNumber(this, true)" onkeydown="resetValidation(this)" />
+						<span class="msgError"></span>
+					</label>
+					
+					<label>
+						Email:
+						<input type="text" name="cEmail" id="cEmail" maxlength="150" placeholder="Email" data-error="Preencha o campo Email corretamente" onblur="isEmail(this, true)" onkeydown="resetValidation(this)" />
+						<span class="msgError"></span>
+					</label>
+					
+					<div class="box-buttons">
+						<button type="button" id="saveContact" value="Salvar" title="Salvar">Salvar</button>
+						<button type="reset" id="cancelContact" value="Cancelar" title="Cancelar">Cancelar</button>
+					</div>
+				</form>
+			</div>
+		</div> <!-- .container -->
+		
+		<div class="container">
+			<div class="box-contacts">
+				<h2> LISTA DE CONTATOS </h2>
+			
+				<table class="contacts-list" width="100%">
+					<thead>
+						<tr>
+							<th> Nome </th>
+
+							<th> Telefone </th>
+
+							<th> Email </th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div> <!-- .container -->
+	</main>
+
+	<footer>
+		<div class="container">
+			<nav class="nav-left">
+				<h3> Áuctor commod </h3>
+				
+				<div class="box-menu">
+					<ul class="menulist">
+						<li class="title">
+							Consectetur
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Lorem item 1"> Á Lorem item 1 </a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Lorem item 2"> Lorem item 2 </a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Lorem item 3"> Lorem item 3 </a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Lorem item 4"> Item 4 </a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Lorem item 5"> Lorem item 5 </a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Lorem item 6"> Lorem item 6 </a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Lorem item 7"> Item 7 </a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Lorem item 8"> Lorem item 8 </a>
+						</li>
+					</ul>
+				
+					<a href="#" title="All things" class="btn-things">
+						All things
+					</a>
+				</div>
+				
+				<div class="box-menu">
+					<ul class="menulist incolumn">
+						<li class="title">
+							Vestibulum
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Lorem item 1"> Á Lorem item 1 </a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Lorem item 2"> Lorem item 2 </a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Lorem item 3"> item 3 </a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Lorem item 4"> Domus Item 4 </a>
+						</li>
+					</ul>
+					
+					<a href="#" title="All things" class="btn-things">
+						All things
+					</a>
+				</div>
+			</nav>
+			
+			<nav class="nav-right">
+				<h3> Pallentesque </h3>
+				
+				<div class="box-partners">
+					<ul class="partnerslist">
+						<li>
+							<a href="javascript:void(0);" title="Logo 01"> 
+								<img src="imagens/logos/logo-01.png" alt="Logo 01" />
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Logo 01"> 
+								<img src="imagens/logos/logo-02.png" alt="Logo 02" />
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Logo 01"> 
+								<img src="imagens/logos/logo-03.png" alt="Logo 03" />
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Logo 01"> 
+								<img src="imagens/logos/logo-04.png" alt="Logo 04" />
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Logo 01"> 
+								<img src="imagens/logos/logo-05.png" alt="Logo 05" />
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="Logo 01"> 
+								<img src="imagens/logos/logo-06.png" alt="Logo 06" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<nav class="nav-bottom">
+				<ul class="menulist-left">
+					<li>
+						<a href="javascript:void(0);" title="Lorem ipsum"> Lorem ipsum </a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="Dolor"> Dolor </a>
+					</li>
+				</ul>
+				
+				<ul class="menulist-right">
+					<li>
+						<a href="javascript:void(0);" title="Consectetur"> Consectetur </a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="Tempus mauris a"> Tempus mauris a </a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="Phasellus in"> Phasellus in </a>
+					</li>
+				</ul>
+			</nav>
+		</div> <!-- .container -->
+			
+		<div class="box-copyright">
+			<div class="container">
+				<p>
+					9999 &copy; Ut urna tigula, established fact that a reader will.
+					Donec in maximus distracted by the readable content of a page when congue.
+				</p>
+			</div> <!-- .container -->
+		</div>
+	</footer>
+	
+	<!-- SCRIPTS CALLS -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+	
+	<script type="text/javascript" src="js/contactScripts.js"></script>
+</body>
+</html>
